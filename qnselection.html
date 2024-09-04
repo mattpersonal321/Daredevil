@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programming Language Selector</title>
+    <link rel="stylesheet" href="qnstyle.css">
+</head>
+<body>
+    <div class="container">
+        <div class="selector-box">
+            <h1>Select Your Favorite Programming Language</h1>
+            <div class="options">
+                <div class="option" onclick="selectOption('JavaScript')">JavaScript</div>
+                <div class="option" onclick="selectOption('Python')">Python</div>
+                <div class="option" onclick="selectOption('Java')">Java</div>
+                <div class="option" onclick="selectOption('C++')">C++</div>
+                <div class="option" onclick="selectOption('Ruby')">Ruby</div>
+                <div class="option" onclick="selectOption('Go')">Go</div>
+            </div>
+            <div class="result">
+                <p id="selectedLanguage">You have selected: None</p>
+            </div>
+        </div>
+    </div>
+    <script src="qnscript.js"></script>
+</body>
+</html>

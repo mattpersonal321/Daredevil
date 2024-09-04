@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(120deg, #3498db, #8e44ad);
+    overflow: hidden;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    position: relative;
+    z-index: 1;
+}
+
+.login-box {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+    text-align: center;
+    transition: transform 0.5s ease;
+}
+
+.login-box:hover {
+    transform: translateY(-10px);
+}
+
+.login-box h2 {
+    color: #fff;
+    margin-bottom: 30px;
+}
+
+.textbox {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.textbox input {
+    width: 100%;
+    padding: 10px;
+    background: none;
+    border: none;
+    border-bottom: 2px solid #fff;
+    outline: none;
+    color: #fff;
+    font-size: 18px;
+}
+
+.textbox label {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    color: #fff;
+    pointer-events: none;
+    transition: 0.5s;
+}
+
+.textbox input:focus ~ label,
+.textbox input:valid ~ label {
+    top: -5px;
+    color: #3498db;
+}
+
+.login-btn {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background: #3498db;
+    color: #fff;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background 0.5s, transform 0.5s;
+}
+
+.login-btn:hover {
+    background: #2980b9;
+    transform: translateY(-5px);
+}
+
+/* Background Animation */
+@keyframes animateBackground {
+    0% { background-position: 0 0; }
+    100% { background-position: 100% 100%; }
+}
+
+body {
+    background: linear-gradient(120deg, #3498db, #8e44ad, #f39c12, #e74c3c);
+    background-size: 400% 400%;
+    animation: animateBackground 15s ease infinite;
+}
